@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+.scrolltotop {
+  position: fixed;
+  bottom: 4rem;
+  z-index: 1000;
+  right: 3rem;
+  background-color: #9b0000;
+  border-radius: 50%;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+}
+
+.swiper {
+  height: 100%;
+  user-select: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #9b0000 !important;
+}
+
+.brandsItem {
+  width: fit-content !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.brandsItem2 {
+  width: fit-content !important;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 3.2rem !important;
+  color: #9b0000;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider .heading {
+  position: absolute;
+  width: 30rem;
+  height: 5rem;
+  left: 50%;
+  top: -1.5rem;
+  transform: translateX(-50%);
+  border: 0.5rem solid #fff;
+  z-index: 2;
+}
+
+/* about page*/
+.aboutContainer {
+  padding: 0rem 2rem;
+  margin: 3rem 0 0 0;
+}
+
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 0rem;
+  border-radius: 1rem;
+}
+
+.aboutContainer h1,
+.contactContainer h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  /* background-color: #222; */
+  padding: 0 1rem;
+  z-index: 3;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+.aboutBox p {
+  margin: 2rem 0;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 0 5rem 0;
+  padding: 0 2rem;
+}
+
+.contactContainer .contactForm,
+.contactDetails {
+  margin: 2rem 0 0 0;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 1rem 0.1rem rgba(58, 58, 58, 0.157);
+  border-radius: 1rem;
+}
+
+.contactForm .contactInputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.contactInputContainer label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s linear;
+}
+
+.contactInputContainer input {
+  padding: 0.5rem 1rem;
+  border: 0.13rem solid #aaa;
+}
+
+.contactInputContainer textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.13rem solid #aaa;
+}
+
+.contactDetails {
+  list-style: none;
+}
+
+.contactDetails h2 {
+  font-size: 2.5rem;
+  text-decoration: underline 0.2rem;
+}
+
+.contactDetails li {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.pointsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointInnerBox {
+  margin: 0 1.5rem;
+}
+
+.pointItem {
+  background-color: rgb(153, 20, 120);
+  color: #fff;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 1rem 0.1rem rgba(153, 20, 120, 0.6);
+}
+
+.contactInputContainer input:focus,
+.contactInputContainer textarea:focus {
+  outline: none;
+}
+
+button.contactFormBtn {
+  background-color: #9b0000;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+button.contactFormBtn:hover {
+  background-color: #9b0000;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+.contactInputContainer:focus-within label {
+  position: absolute;
+  top: -1.2rem;
+  transition: all 0.2s linear;
+  font-size: 1.2rem;
+}
+
+.careerContainer {
+  padding: 5rem 5rem;
+}
+
+.careerBox {
+  display: flex;
+  box-shadow: 0 0 1rem 0.1rem rgba(128, 128, 128, 0.317);
+}
+
+.detailContainer {
+  width: 40%;
+  background-color: #ff8810;
+  padding: 4rem 2rem;
+}
+
+.careerForm {
+  width: 60%;
+  padding: 4rem 3rem;
+}
+
+.careerBox h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.careerForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.careerForm .formBox {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.careerForm .formBox input {
+  border: none;
+  border-bottom: 0.2rem solid grey;
+  width: 100%;
+  outline: none;
+  margin-top: 1rem;
+}
+
+.careerForm button {
+  background-color: #9b0000;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.careerForm button:hover {
+  background-color: #9b0000;
+}
+
+@media only screen and (max-width: 600px) {
+  .careerBox {
+    flex-direction: column;
+  }
+
+  .detailContainer {
+    width: 100%;
+  }
+
+  .careerForm {
+    width: 100%;
+  }
+}
